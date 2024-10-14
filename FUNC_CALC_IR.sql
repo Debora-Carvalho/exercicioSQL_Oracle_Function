@@ -18,3 +18,8 @@ BEGIN
         END IF;
     END IF;
 END;
+
+-- Bloco anônimo alternativo, utilizando a função como variável, pois a função passa a valer o valor do RETURN
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('IR: ' || FUNC_CALC_IR(7000));
+END;
