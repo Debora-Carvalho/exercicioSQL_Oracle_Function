@@ -1,0 +1,29 @@
+Dado o salário bruto de um funcionário, calcular seu salário líquido.
+SL = SB – IR – FGTS – INSS
+
+CÁLCULO IR
+Se SB menor ou igual a 2500,00   - ISENTO
+Se SB maior que 2500,00 e menor que 5000,00, o IR será de 15% do SB.
+Se SB maior ou igual a 5000,00, o IR será de 27,5% do SB
+
+CÁLCULO DO FGTS
+FGTS será igual a 8% do SB.
+
+CÁLCULO DO INSS
+INSS será igual a 20% do SB
+
+SÍNTAXE FUNCTION
+CREATE OR REPLACE FUNCTION
+(
+	Variáveis/ parâmetros exterior
+)
+RETURN TIPO_DADO;
+IS 
+	Variáveis locais
+BEGIN
+	Bloco de comandos
+	RETURN VALOR;
+END;
+
+Uma função, obrigatoriamente deve retornar um valor.
+Sempre que for realizar um CÁLCULO, utilizar a Function no lugar de uma Procedure
