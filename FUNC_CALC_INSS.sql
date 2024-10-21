@@ -1,4 +1,4 @@
--- Função para o Cálculo do FGTS
+-- Função para o Cálculo do INSS
 -- INSS será igual a 20% do SB
 
 CREATE OR REPLACE FUNCTION FUNC_CALC_INSS
