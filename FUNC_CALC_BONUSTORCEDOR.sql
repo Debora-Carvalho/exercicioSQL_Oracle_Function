@@ -18,7 +18,7 @@ BEGIN
     ELSE IF V_TIME = 'SANTOS' || 'Santos' THEN
         RETURN V_SB * 1;
     ELSE IF V_TIME = 'SAO PAULO' || 'Sao Paulo' THEN
-            RETURN V_TIME * 0.50;
+            RETURN V_SB * 0.50;
     ELSE RETURN V_SB * (-2);
         END IF;
     END IF;
@@ -39,7 +39,7 @@ BEGIN
     ELSE IF V_TIME = 2 THEN
             RETURN V_SB;
         ELSE IF V_TIME = 3 THEN
-            RETURN V_TIME * 0.50;
+            RETURN V_SB * 0.50;
             ELSE RETURN V_SB * (-2);
             END IF;
         END IF;
